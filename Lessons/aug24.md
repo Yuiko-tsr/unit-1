@@ -104,3 +104,29 @@ elif height2 > height3:
         print(f"{height2}cm, {height3}cm, {height1}cm")
 else:
     print(f"{height3}cm, {height2}cm, {height1}cm")
+
+#Create a program that calculates the tax for a salary entered by the user following the table below
+def extract_salary(input_str):
+    salary_input= ''.join(filter(str.isdigit, input_str))
+    if salary_input:
+        return float(salary_input)
+    return None
+while True:
+    user_input = input("Please enter your salary")
+    salary = extract_salary(user_input)
+    if salary is not None:
+        break
+    else:
+        print("Please input a valid salary.")
+
+if salary > 0:
+    if salary>10:
+        if salary>50:
+            if salary>100.000:
+                print(salary*0.25)
+            else:
+                print(salary*0.15)
+        else:
+            print(salary*0.10)
+    else:
+        print(salary*0.05)
