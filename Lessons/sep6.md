@@ -4,11 +4,10 @@ for i in range(1,10001):
         print(f"{i} is multiple of 7")
         if i%6==0:
             print(f"{i} is a multple of 6 and 7")
-'''
 
 count=0
 num=1
-while count <500:
+while count <500:a
     if num%7 ==0 and num%6==0:
         count += 1
     num+=1
@@ -49,4 +48,4 @@ while guess_number !=secret_number:
     count += 1
 
 print(f"You won, it took {count} times to guess the secret number")
-#count how many tries it took the user
+'''
