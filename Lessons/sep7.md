@@ -50,6 +50,7 @@ while ordering:
             final_total=0
             total_price = prices[it]*count
             print(f"{items[it].title().ljust(20)} x {count} = ¥{total_price}")
+
     answer = input("Is this the last item?(Y/N)")
     while not answer in "yYnN":
         answer = input("Error, Is this the last item?(Y/N)")
@@ -58,3 +59,8 @@ while ordering:
         ordering=False
 #print the total, plus tax(10%) inside the frame
 print(frame_maker(msg=f"You pay ¥{total*1.1:.2f}", spaces=50, symbol="."))
+pay = int(input("How much will you pay?"))
+while pay<=total:
+    answer = input("Error, How much will you pay?")
+change=pay-total*1.1
+print(f"{change:.2f}")
