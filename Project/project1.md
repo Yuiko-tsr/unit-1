@@ -24,9 +24,15 @@ An example of the data stored is
 Design statement:
 I will to design and make a ———— for a client who is ———. The ——– will about ———— and is constructed using the software ———. It will take  ———- to make and will be evaluated according to the criteria ———.
 
-** add a description of your coin and citation **
+Binance Coin (BNB) is a cryptocurrency issued by the Binance exchange and trades with the BNB symbol. Binance Exchange is the largest cryptocurrency exchange in the world, with a volume of $8.3 billion as of June 2023. 
 
-Justify the tools/structure of your solution
+Benefits: 
+- BNB uses an Auto-Burn system to reduce its total supply to 100,000,000 BNB, which offers greater transparency and predictability to the BNB community.
+- Users of Binance Coin receive a discount in transaction fees on the Binance Exchange as an incentive.
+- Binance Coin is a great utility token because of the current landscape of the crypto world and the progress of Binance.
+
+Why Python:
+Why inter
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
