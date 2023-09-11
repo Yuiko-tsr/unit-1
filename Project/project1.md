@@ -24,12 +24,18 @@ An example of the data stored is
 Design statement:
 I will to design and make a ———— for a client who is ———. The ——– will about ———— and is constructed using the software ———. It will take  ———- to make and will be evaluated according to the criteria ———.
 
-Binance Coin (BNB) is a cryptocurrency issued by the Binance exchange and trades with the BNB symbol. Binance Exchange is the largest cryptocurrency exchange in the world, with a volume of $8.3 billion as of June 2023. 
+Binance Coin (BNB) is a cryptocurrency issued by the Binance exchange and trades with the BNB symbol. Binance Exchange is the largest cryptocurrency exchange in the world, with a volume of $8.3 billion as of June 2023.
 
 Benefits: 
 - BNB uses an Auto-Burn system to reduce its total supply to 100,000,000 BNB, which offers greater transparency and predictability to the BNB community.
 - Users of Binance Coin receive a discount in transaction fees on the Binance Exchange as an incentive.
 - Binance Coin is a great utility token because of the current landscape of the crypto world and the progress of Binance.
+
+Citations
+- https://www.investopedia.com/terms/b/binance-coin-bnb.asp
+- https://cointelegraph.com/learn/what-is-binance-coin-bnb-and-how-does-it-work
+- https://www.binance.com/en/bnb
+- https://tradersunion.com/interesting-articles/what-is-binance-coin/
 
 Why Python:
 Why inter
@@ -38,9 +44,10 @@ Why inter
 1. The electronic ledger is a text-based software (Runs in the Terminal).
 2. The electronic ledger display the basic description of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
-4.
-5.
-6.
+4. The electronic ledger allows the user to change current to yen.
+5. The electronic ledger allows the user to make a graph of past transactions. 
+6. The electronic ledger allows the user to see the profit they made from their first input.
+7. The electronic ledger does not show the password when typed.
 
 # Criteria B: Design
 
