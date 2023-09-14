@@ -54,7 +54,9 @@ Why inter
 ## System Diagram
 
 ## Flow Diagrams
+<img width="475" alt="Screen Shot 2023-09-14 at 13 49 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/46274dff-34dd-46c6-963c-625ca43e8e50">
 
+** Fig. 1** This is the flow diagram for the login system
 
 ## Record of Tasks
 | Task No | Planned Action        | Planned Outcome                                                                          | Time estimate | Target completion date | Criterion |
@@ -85,5 +87,41 @@ def simple_login(user:str, password:str)->bool:
 
     return output
 
+```
 
+As you can see in the flow diagram in **Fig 1**, in the first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. 
+Then in line two and three we ask the code to read the lines on file "users.csv" to
+```.py
+def try_login(name:str, password:str)->bool:
+    with open('users.csv',mode='r') as f:
+        data = f.readlines()
+    success = False
+
+    for line in data:
+        uname = line.split(',')[0]
+        upass = line.split(',')[1].strip()
+        if uname == name and upass == password:
+            success = True
+            break
+    return success
+
+### testing
+attempts = 3
+in_name = input("Enter your user name:")
+in_pass = input("Enter your password:")
+result = try_login(name=in_name,password=in_pass)
+while result == False and attempts > 1:
+    in_name = input("[Error try again] Enter your user name:")
+    in_pass = input("[Error try again] Enter your password:")
+    result = try_login(name=in_name, password=in_pass)
+    attempts -= 1
+
+if result == False:
+    print("Sayonara")
+    exit(1) #1 is the code for exit without error
+
+# the program continues here if it does close
+print("Welcome")
+
+#the rest of your program
 ```
