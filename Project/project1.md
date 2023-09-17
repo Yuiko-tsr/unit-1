@@ -72,6 +72,14 @@ Justification for Proposed Structure:
 | 1       | Create system diagram                   | To have a clear idea of the hardware and software requirements for the proposed solution | 10min         | Sep 13                 | B         |
 | 2       | Create a Login System                   | To have a flow diagram and the code for the login system                                 | 30min         | Sep 14                 | B,C       |
 | 3       | Discuss with Client on Success Criteria | To have an understanding of what the client is expecting from the program                | 10min         | Sep 18                 | A         |
+
+## Testing Plan
+| Test No | Type of test | Area Tested  | Outcome of test                                                                                       | Time estimate | Target completion date | Criterion |
+|---------|--------------|--------------|-------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1       | Unit Testing | Login System | Confirmed that user can login if they have an account and will not be able to login after 3 attempts. | 5min          | Sep 18                 | B         |
+
+<img width="513" alt="Screen Shot 2023-09-18 at 8 59 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/b0aac5e7-d308-4783-a896-a85101fde8a2">
+** Fig. 2 ** This is the evaluation criteria for the unit testing.
 # Criteria C: Development
 
 ## Login System
