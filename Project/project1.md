@@ -79,7 +79,9 @@ Justification for Proposed Structure:
 | 1       | Unit Testing | Login System | Confirmed that user can login if they have an account and will not be able to login after 3 attempts. | 5min          | Sep 18                 | B         |
 
 <img width="513" alt="Screen Shot 2023-09-18 at 8 59 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/b0aac5e7-d308-4783-a896-a85101fde8a2">
+
 ** Fig. 2 ** This is the evaluation criteria for the unit testing.
+
 # Criteria C: Development
 
 ## Login System
