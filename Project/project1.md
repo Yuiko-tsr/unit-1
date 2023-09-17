@@ -91,7 +91,11 @@ def simple_login(user:str, password:str)->bool:
 ```
 
 As you can see in the flow diagram in **Fig 1**, in the first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. 
-Then in line two and three we ask the code to read the lines on file "users.csv" to
+Then in line two and three we ask the code to read the lines on file "users.csv" to read mode ('mode='r'') and read all the lines into the 'data' variable as a list of strings. Each string in the 'data' list represents a line from the file. 
+
+The 'try_login' function is designed to check if a given 'name' and 'password' match any user credentials stored in the 'users.csv' file. It does this by iterating through each line in the 'data' list, splitting each line into 'uname' (username) and 'upass' (password) using the ',' delimiter (assuming that the file format is username,password). It then compares 'uname' and 'upass' with the provided 'name' and 'password'. If there is a match, it sets the 'success' variable to True and breaks out of the loop. If no match is found, 'success' remains False.  
+
+The code then proceeds to test the login using a loop. It allows the user three attempts to enter their username and password correctly. The initial input for 'in_name' and 'in_pass' is taken outside the loop. If they continue to fail the login, a message will appear saying "sayonara" while if they are successful a message will appear saying "welcome".
 ```.py
 def try_login(name:str, password:str)->bool:
     with open('users.csv',mode='r') as f:
