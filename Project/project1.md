@@ -22,7 +22,7 @@ An example of the data stored is
 ## Proposed Solution
 
 Design statement:
-I will to design and make a ———— for a client who is ———. The ——– will about ———— and is constructed using the software ———. It will take  ———- to make and will be evaluated according to the criteria ———.
+I will to design and make a electronic ledger for a client who is ———. The ——– will about ———— and is constructed using the software ———. It will take  ———- to make and will be evaluated according to the criteria ———.
 
 Binance Coin (BNB) is a cryptocurrency issued by the Binance exchange and trades with the BNB symbol. Binance Exchange is the largest cryptocurrency exchange in the world, with a volume of $8.3 billion as of June 2023.
 
@@ -44,10 +44,10 @@ Why inter
 1. The electronic ledger is a text-based software (Runs in the Terminal).
 2. The electronic ledger display the basic description of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
-4. The electronic ledger allows the user to change current to yen.
+4. The electronic ledger allows the user to change currency to yen.
 5. The electronic ledger allows the user to make a graph of past transactions. 
 6. The electronic ledger allows the user to see the profit they made from their first input.
-7. The electronic ledger does not show the password when typed.
+7. The electronic ledger can be viewed in one other language.
 
 # Criteria B: Design
 
@@ -60,9 +60,10 @@ Why inter
 
 ## Record of Tasks
 | Task No | Planned Action        | Planned Outcome                                                                          | Time estimate | Target completion date | Criterion |
-|---------|-----------------------|------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Create system diagram | To have a clear idea of the hardware and software requirements for the proposed solution | 10min         | Sep 13                 | B         |
-| 2       | Create a Login System | To have a flow diagram and the code for the login system                                 | 30min         | Sep 14                 | B, C       |
+|---------|-----------------------------------------|------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1       | Create system diagram                   | To have a clear idea of the hardware and software requirements for the proposed solution | 10min         | Sep 13                 | B         |
+| 2       | Create a Login System                   | To have a flow diagram and the code for the login system                                 | 30min         | Sep 14                 | B,C       |
+| 3       | Discuss with Client on Success Criteria | To have an understanding of what the client is expecting from the program                | 10min         | Sep 18                 |           |
 # Criteria C: Development
 
 ## Login System
