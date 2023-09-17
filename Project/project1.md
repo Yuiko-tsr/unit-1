@@ -63,7 +63,7 @@ Why inter
 |---------|-----------------------------------------|------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1       | Create system diagram                   | To have a clear idea of the hardware and software requirements for the proposed solution | 10min         | Sep 13                 | B         |
 | 2       | Create a Login System                   | To have a flow diagram and the code for the login system                                 | 30min         | Sep 14                 | B,C       |
-| 3       | Discuss with Client on Success Criteria | To have an understanding of what the client is expecting from the program                | 10min         | Sep 18                 |           |
+| 3       | Discuss with Client on Success Criteria | To have an understanding of what the client is expecting from the program                | 10min         | Sep 18                 | A         |
 # Criteria C: Development
 
 ## Login System
