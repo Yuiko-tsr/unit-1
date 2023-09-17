@@ -1,8 +1,5 @@
 # Crypto Wallet
 
-![](22ROOSE-master768.gif)  
-<sub>Illustration for Glenn Harvey</sub>
-
 # Criteria A: Planning
 
 ## Problem definition
@@ -22,7 +19,7 @@ An example of the data stored is
 ## Proposed Solution
 
 Design statement:
-I will to design and make a electronic ledger for a client who is ———. The ——– will about ———— and is constructed using the software ———. It will take  ———- to make and will be evaluated according to the criteria ———.
+I will design and make an electronic ledger for a client who is Ms. Sato, a cryptocurrency trader interested in the emerging market of cryptocurrencies. The ledger will be about tracking cryptocurrency transactions and is constructed using the software Python. It will take approximately one month to make and will be evaluated according to the criteria outlined in the success criteria, including functionality, usability, and multilingual support.
 
 Binance Coin (BNB) is a cryptocurrency issued by the Binance exchange and trades with the BNB symbol. Binance Exchange is the largest cryptocurrency exchange in the world, with a volume of $8.3 billion as of June 2023.
 
@@ -38,7 +35,10 @@ Citations
 - https://tradersunion.com/interesting-articles/what-is-binance-coin/
 
 Why Python:
-Why inter
+* User-Friendly Interface: Python allows for the creation of user-friendly, terminal-based interfaces that are intuitive and easy to navigate. This ensures that Ms. Sato can efficiently manage her cryptocurrency transactions without a steep learning curve.
+* Customization: Python provides the flexibility to tailor the software to Ms. Sato's specific requirements. Developers can design the ledger to include the features she needs, such as tracking cryptocurrency amounts, recording transactions, and displaying essential statistics.
+* Data Handling: Python excels at data manipulation and analysis, making it suitable for managing transaction records and providing Ms. Sato with meaningful statistics. Python's libraries, such as Pandas and Matplotlib, will enable the software to organize and visualize her transaction data effectively.
+* Ease of Maintenance: Python's clean and readable syntax simplifies software maintenance and updates. As Ms. Sato's cryptocurrency preferences evolve, the software can be easily adapted to support new cryptocurrencies or additional features.
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
@@ -48,6 +48,14 @@ Why inter
 5. The electronic ledger allows the user to make a graph of past transactions. 
 6. The electronic ledger allows the user to see the profit they made from their first input.
 7. The electronic ledger can be viewed in one other language.
+
+Justification for Proposed Structure:
+* Basic Description Display: The software will provide users with a basic description of Binance Coin, sourced from reputable references like Investopedia and Binance's official website.
+* Transaction Management: Users will be able to enter, withdraw, and record Binance Coin transactions, ensuring an accurate and up-to-date ledger.
+* Currency Conversion: An optional feature will allow users to convert their portfolio value to yen, helping users understand their holdings in their preferred currency.
+* Transaction History Graphs: The software will enable users to create visual graphs of their past transactions, providing insights into their trading performance.
+* Profit Calculation: Users will have the ability to see the profit or loss made from their initial input, helping them assess the success of their Binance Coin investments.
+* Multilingual Support: To cater to a global user base, the software will offer language options beyond English, enhancing accessibility.
 
 # Criteria B: Design
 
