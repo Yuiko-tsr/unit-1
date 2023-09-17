@@ -24,3 +24,30 @@ Fig. 3 Image of code running of Quiz 011
 
 ## Flowchart:
 Fig. 4 Image of flowchart of Quiz 011
+
+# Quiz012:
+## Question:
+
+Fig. 5 Image of question of Quiz 011
+
+## Answer:
+```py
+def mystery(A:int, B:int):
+    return(A*B-(B-A))
+
+out=mystery(A=2, B=6)
+print(out)
+out1=mystery(A=4, B=10)
+print(out1)
+out2=mystery(A=10, B=10)
+print(out2)
+out3=mystery(A=70, B=50)
+print(out3)
+```
+## Running Code:
+<img width="1155" alt="Screen Shot 2023-09-18 at 8 15 25" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/48868ff6-03a2-4c2b-9038-d1b968e08183">
+
+Fig. 6 Image of code running of Quiz 011
+
+## Flowchart:
+Fig. 7 Image of flowchart of Quiz 011
