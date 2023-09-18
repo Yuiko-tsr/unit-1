@@ -17,7 +17,6 @@ An example of the data stored is
 
 
 ## Proposed Solution
-
 Design statement:
 I will design and make an electronic ledger for a client who is Ms. Sato, a cryptocurrency trader interested in the emerging market of cryptocurrencies. The ledger will be about tracking cryptocurrency transactions and is constructed using the software Python. It will take approximately one month to make and will be evaluated according to the criteria outlined in the success criteria, including functionality, usability, and multilingual support.
 
@@ -49,7 +48,7 @@ Why Python:
 6. The electronic ledger allows the user to see the profit they made from their first input.
 7. The electronic ledger can be viewed in one other language.
 
-Justification for Proposed Structure:
+## Justification of Program
 * Basic Description Display: The software will provide users with a basic description of Binance Coin, sourced from reputable references like Investopedia and Binance's official website.
 * Transaction Management: Users will be able to enter, withdraw, and record Binance Coin transactions, ensuring an accurate and up-to-date ledger.
 * Currency Conversion: An optional feature will allow users to convert their portfolio value to yen, helping users understand their holdings in their preferred currency.
