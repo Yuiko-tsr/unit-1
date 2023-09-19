@@ -66,12 +66,12 @@ Why Python:
 ** Fig. 1** This is the flow diagram for the login system
 
 ## Record of Tasks
-| Task No | Planned Action                              | Planned Outcome                                                                          | Time estimate | Target completion date | Criterion |
-|---------|---------------------------------------------|------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Create system diagram                       | To have a clear idea of the hardware and software requirements for the proposed solution | 10min         | Sep 13                 | B         |
-| 2       | Create a Login System                       | To have a flow diagram and the code for the login system                                 | 30min         | Sep 14                 | B,C       |
-| 3       | Discuss with Client on Success Criteria     | To have an understanding of what the client is expecting from the program                | 10min         | Sep 18                 | A         |
-| 4       | Begin creating "Select Language" and "Menu" | To allow users to navigate in both English and Japanese                                  | 30 min        | Sep 19                 | B,C       |
+|   | Planned Action                                         | Planned Outcome                                                                                                                                                                     | Time estimate | Target completion date | Criterion |
+|---|--------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1 | Create system diagram                                  | To have a clear idea of the hardware and software requirements for the proposed solution                                                                                            | 10min         | Sep 13                 | B         |
+| 2 | Create a Login System                                  | To have a flow diagram and the code for the login system                                                                                                                            | 30min         | Sep 14                 | B,C       |
+| 3 | Discuss with Client on Success Criteria                | To have an understanding of what the client is expecting from the program                                                                                                           | 10min         | Sep 18                 | A         |
+| 4 | Begin creating "Select Language", "Menu" and "Sign in" | To allow users to navigate in both English and Japanese, create an account, login without showing the password, enter and withdraw bitcoin, understand what bitcoin is and sign out | 120 min       | Sep 19                 | B,C       |
 
 ## Testing Plan
 | Test No | Type of test | Area Tested  | Outcome of test                                                                                       | Time estimate | Target completion date | Criterion |
