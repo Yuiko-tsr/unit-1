@@ -28,7 +28,7 @@ Fig. 4 Image of flowchart of Quiz 011
 # Quiz012:
 ## Question:
 
-Fig. 5 Image of question of Quiz 011
+Fig. 5 Image of question of Quiz 012
 
 ## Answer:
 ```py
@@ -47,7 +47,33 @@ print(out3)
 ## Running Code:
 <img width="1155" alt="Screen Shot 2023-09-18 at 8 15 25" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/48868ff6-03a2-4c2b-9038-d1b968e08183">
 
-Fig. 6 Image of code running of Quiz 011
+Fig. 6 Image of code running of Quiz 012
 
 ## Flowchart:
-Fig. 7 Image of flowchart of Quiz 011
+Fig. 7 Image of flowchart of Quiz 012
+
+# Quiz013:
+## Question:
+
+Fig. 8 Image of question of Quiz 013
+
+## Answer:
+```py
+def mysteryTwo(A:int, B:int):
+    return(A*A)+B
+out = mysteryTwo(A=10,B=4)
+print(out)
+out = mysteryTwo(A=37,B=3)
+print(out)
+out = mysteryTwo(A=58,B=2)
+print(out)
+out = mysteryTwo(A=60,B=5)
+print(out)
+```
+## Running Code:
+<img width="1196" alt="Screen Shot 2023-09-20 at 9 31 46" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/33df0829-ca60-4925-90a0-6c4ad325ddde">
+
+Fig. 9 Image of code running of Quiz 013
+
+## Flowchart:
+Fig. 10 Image of flowchart of Quiz 013
