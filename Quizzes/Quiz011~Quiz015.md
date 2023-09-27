@@ -77,3 +77,45 @@ Fig. 9 Image of code running of Quiz 013
 
 ## Flowchart:
 Fig. 10 Image of flowchart of Quiz 013
+
+# Quiz014:
+## Question:
+
+Fig. 11 Image of question of Quiz 014
+
+## Answer:
+```py
+def blackBoxThree(given:str):
+    vars = []
+    for i in range(26):
+        vars.append(0)
+    alpha = "abcdefghijklmnopqrstuvwxyz"
+    message = " "
+    for k in range(len(given)):
+        letter = given[k].lower()
+        if letter == " ":
+            message += " "
+        for i in range(len(alpha)):
+            if letter == alpha[i]:
+                vars[i] += 1
+                message += f"{vars[i]}"
+    return(message)
+
+out = blackBoxThree(given="hello world")
+print(out)
+out = blackBoxThree(given="aaaaAABB")
+print(out)
+out = blackBoxThree(given="abABabAB")
+print(out)
+out = blackBoxThree(given="Create a Function")
+print(out)
+```
+
+Fig. 12 Image of my answer of Quiz014
+## Running Code:
+<img width="1198" alt="Screen Shot 2023-09-27 at 11 22 41" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/c50a5f27-0426-4e87-af6e-fe34ca2f47c9">
+
+Fig. 13 Image of code running of Quiz 014
+
+## Flowchart:
+Fig. 14 Image of flowchart of Quiz 014
