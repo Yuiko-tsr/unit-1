@@ -66,12 +66,18 @@ Why Python:
 ** Fig. 1** This is the flow diagram for the login system
 
 ## Record of Tasks
-|   | Planned Action                                         | Planned Outcome                                                                                                                                                                     | Time estimate | Target completion date | Criterion |
-|---|--------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1 | Create system diagram                                  | To have a clear idea of the hardware and software requirements for the proposed solution                                                                                            | 10min         | Sep 13                 | B         |
-| 2 | Create a Login System                                  | To have a flow diagram and the code for the login system                                                                                                                            | 30min         | Sep 14                 | B,C       |
-| 3 | Discuss with Client on Success Criteria                | To have an understanding of what the client is expecting from the program                                                                                                           | 10min         | Sep 18                 | A         |
-| 4 | Begin creating "Select Language", "Menu" and "Sign in" | To allow users to navigate in both English and Japanese, create an account, login without showing the password, enter and withdraw bitcoin, understand what bitcoin is and sign out | 180 min       | Sep 19                 | B,C       |
+|    | Planned Action                                                              | Planned Outcome                                                                                                                                                                     | Time estimate | Target completion date | Criterion |
+|----|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1  | Create system diagram                                                       | To have a clear idea of the hardware and software requirements for the proposed solution                                                                                            | 10min         | Sep 13                 | B         |
+| 2  | Create a Login System                                                       | To have a flow diagram and the code for the login system                                                                                                                            | 30min         | Sep 14                 | B,C       |
+| 3  | Discuss with Client on Success Criteria                                     | To have an understanding of what the client is expecting from the program                                                                                                           | 10min         | Sep 18                 | A         |
+| 4  | Begin creating "Select Language", "Menu" and "Sign in"                      | To allow users to navigate in both English and Japanese, create an account, login without showing the password, enter and withdraw bitcoin, understand what bitcoin is and sign out | 90 min        | Sep 19                 | B,C       |
+| 5  | Create the options and move them to the library.py to make the code clearer | To allow users to enter/withdraw,calculate the profit.                                                                                                                              | 30 min        | Sep 20                 | B,C       |
+| 6  | Create the change currency and view past transaction functions.             | To allow users to view past transactions and see their profit in different currencies.                                                                                              | 50 min        | Sep 21                 | B,C       |
+| 7  | Allow the change language to happen                                         | To allow users to nagigate in English, Japanese, Chinese and Spanish                                                                                                                | 40 min        | Sep 27                 | B,C       |
+| 8  | Fill in the criteria C in order to have detailed documentation.             | For Dr. Ruben to be able to understand each code and reason of code.                                                                                                                | 40 min        | Sep 27                 | C         |
+| 9  | Add color so it is easier to view.                                          | To allow users to visually see what the actions are.                                                                                                                                | 20 min        | Sep 28                 | B,C       |
+| 10 | Conduct testing                                                             | To confirm that each code works and functions well.                                                                                                                                 | 40 min        | Sep 29                 | B,C       |
 
 ## Testing Plan
 | Test No | Type of test | Area Tested  | Outcome of test                                                                                       | Time estimate | Target completion date | Criterion |
@@ -85,29 +91,6 @@ Why Python:
 # Criteria C: Development
 
 ## Login System
-My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using a if condition and the open command to work with a csv file. More description of the code....
-```.py
-def simple_login(user:str, password:str)->bool:
-    '''
-    Simple authentication, needs fle user.csv
-    :param user: string
-    :param password: string
-    :return: True/False if user is in database
-    '''
-    with open("user.csv") as file:
-        database = file.readlines()
-    output = False
-    for line in database:
-        line_cleaned = line.strip() #remove \n
-        user_pass = line_cleaned.split(",")
-        if user == user_pass[0] and password == user_pass[1]:
-            output = True
-            break
-
-    return output
-
-```
-
 As you can see in the flow diagram in **Fig 1**, in the first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. 
 Then in line two and three we ask the code to read the lines on file "users.csv" to read mode ('mode='r'') and read all the lines into the 'data' variable as a list of strings. Each string in the 'data' list represents a line from the file. 
 
