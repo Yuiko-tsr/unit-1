@@ -119,3 +119,47 @@ Fig. 13 Image of code running of Quiz 014
 
 ## Flowchart:
 Fig. 14 Image of flowchart of Quiz 014
+# Quiz015:
+## Question:
+
+Fig. 15 Image of question of Quiz 015
+
+## Answer:
+```py
+def flip(num_students:int):
+    values=[]
+    for i in range(num_students):
+        values.append(0)
+    for i in range(1, num_students + 1):
+        for x in range(1, num_students+1):
+            if x%i==0:
+                if values[x-1] == 1:
+                    values[x-1]=0
+                else:
+                    values[x-1]=1
+
+    number = 0
+    for x in values:
+        if x==1:
+            number +=1
+    return(number)
+
+out = flip(10)
+print(out)
+out = flip(100)
+print(out)
+out = flip(200)
+print(out)
+out = flip(5678)
+print(out)
+```
+
+Fig. 16 Image of my answer of Quiz015
+## Running Code:
+
+<img width="1236" alt="Screen Shot 2023-09-28 at 10 16 23" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/c6739fdb-61bc-4d71-a4f7-1c0d3f5652bc">
+
+Fig. 17 Image of code running of Quiz 015
+
+## Flowchart:
+Fig. 18 Image of flowchart of Quiz 015
