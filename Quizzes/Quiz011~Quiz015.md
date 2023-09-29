@@ -1,5 +1,6 @@
 # Quiz011:
 ## Question:
+<img width="929" alt="Screen Shot 2023-09-29 at 13 13 12" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/c15fe070-05b4-4211-969d-855e4c212376">
 
 Fig. 1 Image of question of Quiz 011
 
@@ -27,6 +28,7 @@ Fig. 4 Image of flowchart of Quiz 011
 
 # Quiz012:
 ## Question:
+<img width="930" alt="Screen Shot 2023-09-29 at 13 12 53" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/28f32062-3c0a-435a-b7e0-a7d87380dca8">
 
 Fig. 5 Image of question of Quiz 012
 
@@ -54,6 +56,7 @@ Fig. 7 Image of flowchart of Quiz 012
 
 # Quiz013:
 ## Question:
+<img width="926" alt="Screen Shot 2023-09-29 at 13 12 42" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/d534c987-3d15-4292-b2e7-4ff461876067">
 
 Fig. 8 Image of question of Quiz 013
 
@@ -80,6 +83,7 @@ Fig. 10 Image of flowchart of Quiz 013
 
 # Quiz014:
 ## Question:
+<img width="927" alt="Screen Shot 2023-09-29 at 13 12 30" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/4a896a4a-82ae-4d50-91aa-842c6047a5b3">
 
 Fig. 11 Image of question of Quiz 014
 
@@ -110,6 +114,7 @@ print(out)
 out = blackBoxThree(given="Create a Function")
 print(out)
 ```
+<img width="465" alt="Screen Shot 2023-09-29 at 13 11 38" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/194ee614-250b-42e0-8fab-e287bd95cbc2">
 
 Fig. 12 Image of my answer of Quiz014
 ## Running Code:
@@ -121,6 +126,7 @@ Fig. 13 Image of code running of Quiz 014
 Fig. 14 Image of flowchart of Quiz 014
 # Quiz015:
 ## Question:
+<img width="934" alt="Screen Shot 2023-09-29 at 13 12 06" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/ca3b3b3d-6cdd-428c-af36-2647fc4e2dd2">
 
 Fig. 15 Image of question of Quiz 015
 
@@ -153,10 +159,10 @@ print(out)
 out = flip(5678)
 print(out)
 ```
+<img width="477" alt="Screen Shot 2023-09-29 at 13 07 29" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/d7e3291f-5994-4adf-a041-e072c2c8f548">
 
 Fig. 16 Image of my answer of Quiz015
 ## Running Code:
-
 <img width="1236" alt="Screen Shot 2023-09-28 at 10 16 23" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/c6739fdb-61bc-4d71-a4f7-1c0d3f5652bc">
 
 Fig. 17 Image of code running of Quiz 015
