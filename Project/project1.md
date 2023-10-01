@@ -60,7 +60,8 @@ Why Python:
 ## System Diagram
 <img width="362" alt="Screen Shot 2023-10-01 at 20 35 04" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/7e5c80ea-253e-4238-be46-bef84fe81a53">
 
-**Fig. 1** Image of system diagram
+**Fig. 1** Image of system diagram 
+{in_name} means the user's name and is connected to the user's personal csv with the transaction. Moreover, each of the language_{lang}.csv corresponds to a csv with a certain language (0=English, 1=Japanese, 2=Spanish, 3=Chinese.
 
 ## Flow Diagrams
 <img width="362" alt="Screen Shot 2023-09-14 at 13 49 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/46274dff-34dd-46c6-963c-625ca43e8e50">
