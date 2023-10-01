@@ -58,12 +58,12 @@ Why Python:
 # Criteria B: Design
 
 ## System Diagram
-<img width="482" alt="Screen Shot 2023-10-01 at 20 35 04" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/7e5c80ea-253e-4238-be46-bef84fe81a53">
+<img width="362" alt="Screen Shot 2023-10-01 at 20 35 04" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/7e5c80ea-253e-4238-be46-bef84fe81a53">
 
 **Fig. 1** Image of system diagram
 
 ## Flow Diagrams
-<img width="475" alt="Screen Shot 2023-09-14 at 13 49 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/46274dff-34dd-46c6-963c-625ca43e8e50">
+<img width="362" alt="Screen Shot 2023-09-14 at 13 49 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/46274dff-34dd-46c6-963c-625ca43e8e50">
 
 ** Fig. 2** This is the flow diagram for the login system
 
