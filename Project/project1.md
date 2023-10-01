@@ -64,7 +64,7 @@ Why Python:
 {in_name} means the user's name and is connected to the user's personal csv with the transaction. Moreover, each of the language_{lang}.csv corresponds to a csv with a certain language (0=English, 1=Japanese, 2=Spanish, 3=Chinese.
 
 ## Flow Diagrams
-<img width="362" alt="Screen Shot 2023-09-14 at 13 49 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/46274dff-34dd-46c6-963c-625ca43e8e50">
+<img width="538" alt="Screen Shot 2023-10-02 at 8 45 32" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/b98fbf51-423e-46e1-be6f-034bdd2885c6">
 
 ** Fig. 2** This is the flow diagram for the login system
 
