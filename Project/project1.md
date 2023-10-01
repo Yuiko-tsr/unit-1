@@ -15,11 +15,6 @@ An example of the data stored is
 | Sep 23 2022 | bought a house | Expenses | 10 BTC |
 | Sep 24 2022 | food for house celebration | Food | 0.000001 BTC |
 
-## System Diagram
-<img width="482" alt="Screen Shot 2023-10-01 at 20 35 04" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/7e5c80ea-253e-4238-be46-bef84fe81a53">
-
-**Fig. 1** Image of system diagram
-
 ## Proposed Solution
 Design statement:
 I will design and make an electronic ledger for a client who is Ms. Sato, a cryptocurrency trader interested in the emerging market of cryptocurrencies. The ledger will be about tracking cryptocurrency transactions and is constructed using the software Python. It will take approximately one month to make and will be evaluated according to the criteria outlined in the success criteria, including functionality, usability, and multilingual support.
@@ -63,6 +58,9 @@ Why Python:
 # Criteria B: Design
 
 ## System Diagram
+<img width="482" alt="Screen Shot 2023-10-01 at 20 35 04" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/7e5c80ea-253e-4238-be46-bef84fe81a53">
+
+**Fig. 1** Image of system diagram
 
 ## Flow Diagrams
 <img width="475" alt="Screen Shot 2023-09-14 at 13 49 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/46274dff-34dd-46c6-963c-625ca43e8e50">
