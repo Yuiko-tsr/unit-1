@@ -68,7 +68,7 @@ Why Python:
 
 ** Fig. 2** This is the flow diagram for the login system
 
-<img width="362" alt="Screen Shot 2023-10-01 at 23 03 27" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/1105701b-97e9-4f06-9c57-b8603868044c">
+<img width="572" alt="Screen Shot 2023-10-02 at 8 55 10" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/fb1a2519-1c79-4760-866a-a13b881247a7">
 
 ** Fig. 3** This is the flow diagram for the message function
 
