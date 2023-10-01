@@ -43,7 +43,7 @@ Why Python:
 2. The electronic ledger display the basic description of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
 4. The electronic ledger allows the user to change currency to yen.
-5. The electronic ledger allows the user to make a graph of past transactions. 
+5. The electronic ledger allows the user to make a list of past transactions. 
 6. The electronic ledger allows the user to see the profit they made from their first input.
 7. The electronic ledger can be viewed in one other language.
 
@@ -102,14 +102,17 @@ Why Python:
 ** Fig. 3 ** This is the evaluation criteria for the unit testing.
 
 # Criteria C: Development
-
+## Techniques Used:
+1. Functions
+2. For/while loops
+3. Input Validation
+4. If/then/else statements
+5. Encryption
+6. List Comprehension
+7. Global Statement
+8. Import getpass, csv, datetime, time
+   
 ## Login System
-As you can see in the flow diagram in **Fig 1**, in the first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. 
-Then in line two and three we ask the code to read the lines on file "users.csv" to read mode ('mode='r'') and read all the lines into the 'data' variable as a list of strings. Each string in the 'data' list represents a line from the file. 
-
-The 'try_login' function is designed to check if a given 'name' and 'password' match any user credentials stored in the 'users.csv' file. It does this by iterating through each line in the 'data' list, splitting each line into 'uname' (username) and 'upass' (password) using the ',' delimiter (assuming that the file format is username,password). It then compares 'uname' and 'upass' with the provided 'name' and 'password'. If there is a match, it sets the 'success' variable to True and breaks out of the loop. If no match is found, 'success' remains False.  
-
-The code then proceeds to test the login using a loop. It allows the user three attempts to enter their username and password correctly. The initial input for 'in_name' and 'in_pass' is taken outside the loop. If they continue to fail the login, a message will appear saying "sayonara" while if they are successful a message will appear saying "welcome".
 ```.py
 def try_login(name:str, password:str)->bool:
     with open('users.csv',mode='r') as f:
@@ -143,6 +146,128 @@ if result == False:
 print("Welcome")
 
 #the rest of your program
+```
+As you can see in the flow diagram in **Fig. 2**, in the first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. 
+Then in line two and three we ask the code to read the lines on file "users.csv" to read mode ('mode='r'') and read all the lines into the 'data' variable as a list of strings. Each string in the 'data' list represents a line from the file. 
+
+The 'try_login' function is designed to check if a given 'name' and 'password' match any user credentials stored in the 'users.csv' file. It does this by iterating through each line in the 'data' list, splitting each line into 'uname' (username) and 'upass' (password) using the ',' delimiter (assuming that the file format is username,password). It then compares 'uname' and 'upass' with the provided 'name' and 'password'. If there is a match, it sets the 'success' variable to True and breaks out of the loop. If no match is found, 'success' remains False.  
+
+The code then proceeds to test the login using a loop. It allows the user three attempts to enter their username and password correctly. The initial input for 'in_name' and 'in_pass' is taken outside the loop. If they continue to fail the login, a message will appear saying "sayonara" while if they are successful a message will appear saying "welcome".
+
+## Enter Transaction
+```.py
+def enter():
+    amount_e = input(message(4, lang)) #how much would you like to deposit
+    while not amount_e.isdigit():
+        amount_e = input(RED+message(5, lang)+RESET)
+    date = datetime.date.today()
+    line = f"{date},{amount_e}\n"
+    time.sleep(1)
+    print(GREEN + message(6, lang) + RESET) #Depositing...
+    time.sleep(1)
+    print(f"{GREEN}{amount_e}{message(7, lang)} {date}{RESET}") #{amount_e} has been deposited on {date}
+    with open(f"{in_name}.csv", 'a') as myfile:
+        myfile.writelines(line)
+```
+Above is the function that allows the user to deposit into the transaction. The first line asks the user to input the amount they would like to input and the second and third line makes sure that the input is a valid integer. After that the system loads the date and prints the amount and date of deposit and inserts the information into the user's personal csv.
+
+## Withdraw Transaction
+```.py
+def withdraw():
+    global totalleft
+    amount_w = input(message(9, lang)) #how much would you like to withdraw
+    while not amount_w.isdigit():
+        amount_w = input(f"{RED}{message(10, lang)}{RESET}") #Error, how much would you like to withdraw
+    while amount_w <= 0:
+        amount_w = input(f"{RED}{message(10, lang)}{RESET}") #Error, how much would you like to withdraw
+
+    totalleft = total_left()
+
+    while amount_w > totalleft:
+        amount_w = int(input(RED+message(11, lang)+ RESET)) #Error, you cannot withdraw more than there is in the transaction
+    date = datetime.date.today()
+    line = f"{date},-{amount_w}\n"
+    time.sleep(1)
+    print(RED+message(12, lang)+ RESET) #Withdrawing...
+    time.sleep(1)
+    print(f"{RED}{amount_w}{message(13, lang)} {date}{RESET}") #you withdrawed {amount_w} on {date}
+    left = totalleft - amount_w
+    print(f"{message(14, lang)} {left} {message(15, lang)}{RESET}") #you have a total of {left} BNB
+    with open(f"{in_name}.csv", 'a') as myfile:
+        myfile.writelines(line)
+```
+Above is the function that allows the user to withdraw from the transaction. The user how much they would like to withdraw and the four lines after that makes sure that the input is a valid integer. It also makes sure that there are no minus values. Then the code takes the total amount of Bitcoin in the transaction and the two lines after that makes sure that the withdrawed amount is less than the amount in the transaction. Then the system loads the date and prints the amount and date that has been deposited as well as the amount that is remaining in the transaction. Then the system adds this withdrawal to the transaction history.
+
+## View Profit
+```.py
+def profit_calculator():
+    global profit
+    with open(f"{in_name}.csv", mode='r') as f:
+        csv_reader = csv.reader(f)
+        totalleft = 0
+        first_deposit = None
+        for line in csv_reader:
+            date, amount_str = line
+            amount = int(amount_str)
+            if first_deposit is None:
+                first_deposit = amount
+            totalleft += amount
+
+        profit = totalleft - first_deposit
+        print(f"{message(60, lang)} {first_deposit} {message(61, lang)} {totalleft}") # your first deposite was {first_deposit} and your total is
+        if profit <0:
+            print(f"{RED}{message(8, lang)} {profit}{RESET}") #your profit is
+        else:
+            print(f"{GREEN}{message(8, lang)} {profit}{RESET}") #your profit is
+```
+Above is the function that allows the user to view their profit. First the code opens the user's personal csv and reads the file. For every line they take the amount and add the amount to the totalleft as well as make the first amount the first_deposit. After that they take the total amount in the transaction and minus the first_deposit to calculate the profit. If the total is positive the message would be printed in green to show that there is profit while if the total is negative the message would be printed in red to show that there is loss.
+## Change Currency
+```.py
+def changecurrency():
+    profit_calculator()
+    currency = input(f"{message(16, lang)}\n{message(52, lang)}\n{message(53, lang)}\n{message(54, lang)}\n{message(55, lang)}") #which currency would you like to change to
+    while not currency in "1,2,3,4":
+        currency = input(RED+message(17, lang)+ RESET)
+    time.sleep(1)
+    if currency == "1":
+        print(f"{message(18, lang)}{profit * 220}") #Dollars
+    elif currency == "2":
+        print(f"{message(19, lang)}{profit * 32400}") #Yen
+    elif currency == "3":
+        print(f"{message(20, lang)}{profit * 205}") #Euro
+    elif currency == "4":
+        print(f"{message(21, lang)}{profit * 1600}") #Yuan
+```
+Above is the function that changes the currency of the profit to allow the user to view understand the amount of their profit more easily. The first line asks which currency the user would like to change to. After the choice has been made the system prints the changed currency accordingly.
+## Vieew List of Past Transaction
+```.py
+def print_table():
+    print(f"{message(22, lang)}{' '*8}{message(23, lang)}{' '*2}{message(24, lang)}")
+    with open(f"{in_name}.csv", 'r') as f:
+        csv_reader = csv.reader(f)
+        for row in csv_reader:
+            date, amount = row
+            amount = int(amount)
+            if amount >= 0:
+                transaction_type = message(25, lang)
+                color = GREEN
+            else:
+                transaction_type = message(26, lang)
+                color =RED
+            if transaction_type == message(26, lang):
+                amount = abs(amount)
+            print(f"{color}{date}{' ' * (12 - len(date))}{transaction_type}{' ' * (20 - len(transaction_type))}{amount}{' ' * (10 - len(str(amount)))}{RESET}")
+```
+Above is the function that prints the list of the past transactions. The first sentence is the title of each column of the table from the left being date, transaction type and amount. Then the code reads the user's personal csv and takes the date and amount. If the amount is larger than 0 it is a deposit and if it is not it is a withdraw. Therefore for each transacrtion history the system will print the date, whether it is deposit or withdraw and the amount of transaction.
+
+## Change Language
+```.py
+def message(line_number, lang):
+    with open(f"language_{lang}.csv", 'r', newline='') as f:
+        csv_reader = csv.reader(f)
+        for line_count, row in enumerate(csv_reader, start=1):
+            if line_count == line_number:
+                return row[0]
 ```
 # Video of the Program 
 [Video of the Program](https://drive.google.com/file/d/1gUIQnzA8aQQ_K1IwTqDpziolSwVDi2Je/view?usp=sharing)
