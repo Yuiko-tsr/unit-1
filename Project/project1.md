@@ -110,7 +110,7 @@ Why Python:
 5. Encryption
 6. List Comprehension
 7. Global Statement
-8. Import getpass, csv, datetime, time
+8. Import getpass, csv, datetime, time (source of getpass: Bernard Lee)
    
 ## Login System
 ```.py
