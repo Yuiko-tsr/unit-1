@@ -177,7 +177,7 @@ def enter():
     with open(f"{in_name}.csv", 'a') as myfile:
         myfile.writelines(line)
 ```
-Above is the function that allows the user to deposit into the transaction. The first line asks the user to input the amount they would like to input and the second and third line makes sure that the input is a valid integer. After that the system loads the date and prints the amount and date of deposit and inserts the information into the user's personal csv.
+Above is the function that allows the user to deposit into the transaction. As shown in the flow diagram in **Fig. 4** the first line asks the user to input the amount they would like to input and the second and third line makes sure that the input is a valid integer. After that the system loads the date and prints the amount and date of deposit and inserts the information into the user's personal csv.
 
 ## Withdraw Transaction
 ```.py
@@ -277,6 +277,6 @@ def message(line_number, lang):
             if line_count == line_number:
                 return row[0]
 ```
-Above is the function that changes the language setting of the system. Each language has a different csv with each line of the csv corresponding to the same message. Therefore, when the function message() called the system opens the specific language's csv and prints the line_number that has been requested.
+Above is the function that changes the language setting of the system. As shown in the flow diagram in **Fig. 3** each language has a different csv with each line of the csv corresponding to the same message. Therefore, when the function message() called the system opens the specific language's csv and prints the line_number that has been requested.
 # Video of the Program 
 [Video of the Program](https://drive.google.com/file/d/1gUIQnzA8aQQ_K1IwTqDpziolSwVDi2Je/view?usp=sharing)
