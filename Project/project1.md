@@ -15,6 +15,10 @@ An example of the data stored is
 | Sep 23 2022 | bought a house | Expenses | 10 BTC |
 | Sep 24 2022 | food for house celebration | Food | 0.000001 BTC |
 
+## System Diagram
+<img width="482" alt="Screen Shot 2023-10-01 at 20 35 04" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/7e5c80ea-253e-4238-be46-bef84fe81a53">
+
+**Fig. 1** Image of system diagram
 
 ## Proposed Solution
 Design statement:
@@ -63,7 +67,7 @@ Why Python:
 ## Flow Diagrams
 <img width="475" alt="Screen Shot 2023-09-14 at 13 49 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/46274dff-34dd-46c6-963c-625ca43e8e50">
 
-** Fig. 1** This is the flow diagram for the login system
+** Fig. 2** This is the flow diagram for the login system
 
 ## Record of Tasks
 |    | Planned Action                                                              | Planned Outcome                                                                                                                                                                     | Time estimate | Target completion date | Criterion |
@@ -96,7 +100,7 @@ Why Python:
 
 <img width="513" alt="Screen Shot 2023-09-18 at 8 59 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/b0aac5e7-d308-4783-a896-a85101fde8a2">
 
-** Fig. 2 ** This is the evaluation criteria for the unit testing.
+** Fig. 3 ** This is the evaluation criteria for the unit testing.
 
 # Criteria C: Development
 
