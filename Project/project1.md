@@ -67,6 +67,14 @@ Why Python:
 
 ** Fig. 2** This is the flow diagram for the login system
 
+<img width="362" alt="Screen Shot 2023-10-01 at 23 03 27" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/1105701b-97e9-4f06-9c57-b8603868044c">
+
+** Fig. 3** This is the flow diagram for the message function
+
+<img width="425" alt="Screen Shot 2023-10-01 at 23 04 22" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/078e3086-8bee-42dc-a02e-1edd0491aa41">
+
+** Fig. 4** This is the flow diagram for the function to deposit to transaction
+
 ## Record of Tasks
 |    | Planned Action                                                              | Planned Outcome                                                                                                                                                                     | Time estimate | Target completion date | Criterion |
 |----|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
@@ -99,7 +107,7 @@ Why Python:
 
 <img width="513" alt="Screen Shot 2023-09-18 at 8 59 01" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/b0aac5e7-d308-4783-a896-a85101fde8a2">
 
-** Fig. 3 ** This is the evaluation criteria for the unit testing.
+** Fig. 5 ** This is the evaluation criteria for the unit testing.
 
 # Criteria C: Development
 ## Techniques Used:
