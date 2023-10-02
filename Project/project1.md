@@ -68,11 +68,11 @@ Why Python:
 
 ** Fig. 2** This is the flow diagram for the login system
 
-<img width="572" alt="Screen Shot 2023-10-02 at 8 55 10" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/fb1a2519-1c79-4760-866a-a13b881247a7">
+<img width="538" alt="Screen Shot 2023-10-02 at 8 55 10" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/fb1a2519-1c79-4760-866a-a13b881247a7">
 
 ** Fig. 3** This is the flow diagram for the message function
 
-<img width="425" alt="Screen Shot 2023-10-01 at 23 04 22" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/078e3086-8bee-42dc-a02e-1edd0491aa41">
+<img width="538" alt="Screen Shot 2023-10-02 at 9 02 14" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/dc692c1d-f65c-45ab-a12d-d36e58449be5">
 
 ** Fig. 4** This is the flow diagram for the function to deposit to transaction
 
