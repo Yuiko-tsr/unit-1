@@ -282,4 +282,4 @@ def message(line_number, lang):
 ```
 Above is the function that changes the language setting of the system. As shown in the flow diagram in **Fig. 3** each language has a different csv with each line of the csv corresponding to the same message. Therefore, when the function message() called the system opens the specific language's csv and prints the line_number that has been requested.
 # Video of the Program 
-[Video of the Program](https://drive.google.com/file/d/1gUIQnzA8aQQ_K1IwTqDpziolSwVDi2Je/view?usp=sharing)
+[Video of the Program](https://drive.google.com/file/d/1WAOCgGRHYOQjKun48W7FLEuTUp6bmzTq/view?usp=sharing)
