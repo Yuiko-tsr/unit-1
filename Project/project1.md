@@ -17,26 +17,26 @@ An example of the data stored is
 
 ## Proposed Solution
 Design statement:
-I will design and make an electronic ledger for a client who is Ms. Sato, a cryptocurrency trader interested in the emerging market of cryptocurrencies. The ledger will be about tracking cryptocurrency transactions and is constructed using the software Python. It will take approximately one month to make and will be evaluated according to the criteria outlined in the success criteria, including functionality, usability, and multilingual support.
+I will design and make an **electronic ledger** for a client who is **Ms. Sato**, a **cryptocurrency trader** interested in the **emerging market of cryptocurrencies**. The ledger will be about **tracking cryptocurrency transactions** and is constructed using the software **Python**. It will take approximately **one month** to make and will be evaluated according to the criteria outlined in the success criteria, including functionality, usability, and multilingual support.
 
-Binance Coin (BNB) is a cryptocurrency issued by the Binance exchange and trades with the BNB symbol. Binance Exchange is the largest cryptocurrency exchange in the world, with a volume of $8.3 billion as of June 2023.
+**Binance Coin (BNB)** is a cryptocurrency issued by the Binance exchange and trades with the BNB symbol. Binance Exchange is the largest cryptocurrency exchange in the world, with a volume of $8.3 billion as of June 2023.
 
-Benefits: 
+**Benefits:**
 - BNB uses an Auto-Burn system to reduce its total supply to 100,000,000 BNB, which offers greater transparency and predictability to the BNB community.
 - Users of Binance Coin receive a discount in transaction fees on the Binance Exchange as an incentive.
 - Binance Coin is a great utility token because of the current landscape of the crypto world and the progress of Binance.
 
-Citations
+**Citations**
 - https://www.investopedia.com/terms/b/binance-coin-bnb.asp
 - https://cointelegraph.com/learn/what-is-binance-coin-bnb-and-how-does-it-work
 - https://www.binance.com/en/bnb
 - https://tradersunion.com/interesting-articles/what-is-binance-coin/
 
-Why Python:
-* User-Friendly Interface: Python allows for the creation of user-friendly, terminal-based interfaces that are intuitive and easy to navigate. This ensures that Ms. Sato can efficiently manage her cryptocurrency transactions without a steep learning curve.
-* Customization: Python provides the flexibility to tailor the software to Ms. Sato's specific requirements. Developers can design the ledger to include the features she needs, such as tracking cryptocurrency amounts, recording transactions, and displaying essential statistics.
-* Data Handling: Python excels at data manipulation and analysis, making it suitable for managing transaction records and providing Ms. Sato with meaningful statistics. Python's libraries, such as Pandas and Matplotlib, will enable the software to organize and visualize her transaction data effectively.
-* Ease of Maintenance: Python's clean and readable syntax simplifies software maintenance and updates. As Ms. Sato's cryptocurrency preferences evolve, the software can be easily adapted to support new cryptocurrencies or additional features.
+**Why Python:**
+* **User-Friendly Interface:** Python allows for the creation of user-friendly, terminal-based interfaces that are intuitive and easy to navigate. This ensures that Ms. Sato can efficiently manage her cryptocurrency transactions without a steep learning curve.
+* **Customization:** Python provides the flexibility to tailor the software to Ms. Sato's specific requirements. Developers can design the ledger to include the features she needs, such as tracking cryptocurrency amounts, recording transactions, and displaying essential statistics.
+* **Data Handling:** Python excels at data manipulation and analysis, making it suitable for managing transaction records and providing Ms. Sato with meaningful statistics. Python's libraries, such as Pandas and Matplotlib, will enable the software to organize and visualize her transaction data effectively.
+* **Ease of Maintenance:** Python's clean and readable syntax simplifies software maintenance and updates. As Ms. Sato's cryptocurrency preferences evolve, the software can be easily adapted to support new cryptocurrencies or additional features.
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
@@ -73,9 +73,9 @@ Why Python:
 
 ** Fig. 3** This is the flow diagram for the message function (Most important)
 
-<img width="538" alt="Screen Shot 2023-10-02 at 9 02 14" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/dc692c1d-f65c-45ab-a12d-d36e58449be5">
+<img width="538" alt="Screen Shot 2023-10-02 at 8 45 32" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/b98fbf51-423e-46e1-be6f-034bdd2885c6">
 
-** Fig. 4** This is the flow diagram for the function to deposit to transaction
+** Fig. 4** This is the flow diagram for the function for try_login (needed for the code of the login system **Fig. 2**
 
 ## Record of Tasks
 |    | Planned Action                                                              | Planned Outcome                                                                                                                                                                     | Time estimate | Target completion date | Criterion |
@@ -158,7 +158,7 @@ print("Welcome")
 
 #the rest of your program
 ```
-As you can see in the flow diagram in **Fig. 2**, in the first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. 
+As you can see in the flow diagram in **Fig. 4**, in the first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. 
 Then in line two and three we ask the code to read the lines on file "users.csv" to read mode ('mode='r'') and read all the lines into the 'data' variable as a list of strings. Each string in the 'data' list represents a line from the file. 
 
 The 'try_login' function is designed to check if a given 'name' and 'password' match any user credentials stored in the 'users.csv' file. It does this by iterating through each line in the 'data' list, splitting each line into 'uname' (username) and 'upass' (password) using the ',' delimiter (assuming that the file format is username,password). It then compares 'uname' and 'upass' with the provided 'name' and 'password'. If there is a match, it sets the 'success' variable to True and breaks out of the loop. If no match is found, 'success' remains False.  
@@ -180,7 +180,7 @@ def enter():
     with open(f"{in_name}.csv", 'a') as myfile:
         myfile.writelines(line)
 ```
-Above is the function that allows the user to deposit into the transaction. As shown in the flow diagram in **Fig. 4** the first line asks the user to input the amount they would like to input and the second and third line makes sure that the input is a valid integer. After that the system loads the date and prints the amount and date of deposit and inserts the information into the user's personal csv.
+Above is the function that allows the user to deposit into the transaction. The first line asks the user to input the amount they would like to input and the second and third line makes sure that the input is a valid integer. After that the system loads the date and prints the amount and date of deposit and inserts the information into the user's personal csv.
 
 ## Withdraw Transaction
 ```.py
