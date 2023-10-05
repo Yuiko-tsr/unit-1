@@ -26,12 +26,6 @@ I will design and make an **electronic ledger** for a client who is **Ms. Sato**
 - Users of Binance Coin receive a discount in transaction fees on the Binance Exchange as an incentive.
 - Binance Coin is a great utility token because of the current landscape of the crypto world and the progress of Binance.
 
-**Citations**
-- https://www.investopedia.com/terms/b/binance-coin-bnb.asp
-- https://cointelegraph.com/learn/what-is-binance-coin-bnb-and-how-does-it-work
-- https://www.binance.com/en/bnb
-- https://tradersunion.com/interesting-articles/what-is-binance-coin/
-
 **Why Python:**
 * **User-Friendly Interface:** Python allows for the creation of user-friendly, terminal-based interfaces that are intuitive and easy to navigate. This ensures that Ms. Sato can efficiently manage her cryptocurrency transactions without a steep learning curve.
 * **Customization:** Python provides the flexibility to tailor the software to Ms. Sato's specific requirements. Developers can design the ledger to include the features she needs, such as tracking cryptocurrency amounts, recording transactions, and displaying essential statistics.
@@ -281,5 +275,12 @@ def message(line_number, lang):
                 return row[0]
 ```
 Above is the function that changes the language setting of the system. As shown in the flow diagram in **Fig. 3** each language has a different csv with each line of the csv corresponding to the same message. Therefore, when the function message() called the system opens the specific language's csv and prints the line_number that has been requested.
+
+## Citations
+- https://www.investopedia.com/terms/b/binance-coin-bnb.asp
+- https://cointelegraph.com/learn/what-is-binance-coin-bnb-and-how-does-it-work
+- https://www.binance.com/en/bnb
+- https://tradersunion.com/interesting-articles/what-is-binance-coin/
+
 # Video of the Program 
 [Video of the Program](https://drive.google.com/file/d/1WAOCgGRHYOQjKun48W7FLEuTUp6bmzTq/view?usp=sharing)
