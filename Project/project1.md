@@ -71,7 +71,7 @@ Why Python:
 
 <img width="538" alt="Screen Shot 2023-10-02 at 8 55 10" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/fb1a2519-1c79-4760-866a-a13b881247a7">
 
-** Fig. 3** This is the flow diagram for the message function
+** Fig. 3** This is the flow diagram for the message function (Most important)
 
 <img width="538" alt="Screen Shot 2023-10-02 at 9 02 14" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/dc692c1d-f65c-45ab-a12d-d36e58449be5">
 
